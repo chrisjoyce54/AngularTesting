@@ -10,7 +10,7 @@ describe('HeroComponent', () => {
         TestBed.configureTestingModule({
             declarations: [HeroComponent],
             schemas: [NO_ERRORS_SCHEMA]
-        });        
+        });
         fixture = TestBed.createComponent(HeroComponent);
     });
 
@@ -25,7 +25,7 @@ describe('HeroComponent', () => {
         fixture.detectChanges();
 
         let text = fixture.debugElement.query(By.css('a')).nativeElement.textContent;
-        console.log(text);
+        //console.log(text);
         expect(text).toContain('SuperDude');
 
         expect(fixture.nativeElement.querySelector('a').textContent).toContain('SuperDude');
